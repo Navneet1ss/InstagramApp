@@ -1,1 +1,11 @@
-<h1> Instagram </h1>
+<h1>Instagram posts</h1>
+<ul>
+   <% @pics.each do |pic|%>
+      <li>
+        <%= link_to  pic.title , pic %>
+      </li>
+   <% end %>
+</ul>
+
+
+<%= link_to "New Post", new_pic_path %>

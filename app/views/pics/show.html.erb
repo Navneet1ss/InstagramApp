@@ -1,0 +1,17 @@
+
+<%= @pic.title %>
+<%= @pic.description %>
+
+<ul>
+  <li><%= link_to "Edit", edit_pic_path(@pic) %></li>
+
+  <li><%= link_to "Destroy", pic_path(@pic), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+
+    <%= link_to "Back", root_path %>
+</ul>
+
+
+
