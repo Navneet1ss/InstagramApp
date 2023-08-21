@@ -1,6 +1,7 @@
 
 <%= @pic.title %>
 <%= @pic.description %>
+<P> Post By: <%= @pic.user.email %> </p>
 
 <ul>
   <li><%= link_to "Edit", edit_pic_path(@pic) %></li>
