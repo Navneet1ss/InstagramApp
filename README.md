@@ -7,3 +7,24 @@ Posts, Add User Model and Association with Pics Model, Image Uploading, adding L
 /Thumbs Up, Comments section and etc.
 
 ![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot01.png)
+
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot02.png)
+
+
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot03.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot04.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot05.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot06.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot06.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot-07.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot08.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot09.png)
