@@ -6,4 +6,4 @@ database backend, App with Pics Model & Controller, Ability to Create, Displayin
 Posts, Add User Model and Association with Pics Model, Image Uploading, adding Likesymbol 
 /Thumbs Up, Comments section and etc.
 
-https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot01.png
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot01.png)
