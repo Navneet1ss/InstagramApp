@@ -5,3 +5,5 @@ Design & Implement Instagram Web App with deployment on Heroku web Build a web a
 database backend, App with Pics Model & Controller, Ability to Create, Displaying, Edit and Deleting 
 Posts, Add User Model and Association with Pics Model, Image Uploading, adding Likesymbol 
 /Thumbs Up, Comments section and etc.
+
+https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot01.png
