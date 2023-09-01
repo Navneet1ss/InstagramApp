@@ -28,3 +28,9 @@ Posts, Add User Model and Association with Pics Model, Image Uploading, adding L
 ![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot08.png)
 
 ![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot09.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot010.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot011.png)
+
+![Image URL](https://github.com/Navneet1ss/InstagramApp/blob/main/Screenshot012.png)
