@@ -1,12 +1,37 @@
-<h1>Instagram posts</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="text-center">Instagram Posts</h1>
+      <div class="card-deck mt-4">
+        <% @pics.each do |pic| %>
+          <div class="card mb-4 shadow">
+            <div class="card-header">
+              <p class="card-text text-muted mb-0">
+                Posted By: <%= pic.user.email %> <br>
+                Posted On: <%= pic.created_at.strftime("%B %d, %Y %I:%M %p") %>
+              </p>
+            </div>
+            <div class="card-body">
+              <% if pic.image.attached? %>
+                <%= image_tag pic.image, class: "card-img-top img-fluid mb-3" %>
+              <% else %>
+                <!-- Display a placeholder image or some other content -->
+              <% end %>
+              <h5 class="card-title"><%= pic.title %></h5>
+              <p class="card-text"><%= pic.description %></p>
+            </div>
+            <div class="card-footer">
 
-<ul>
-   <% @pics.each do |pic|%>
-      <li>
-        <%= link_to  pic.title , pic %>
-      </li>
-   <% end %>
-</ul>
+              <%= link_to like_pic_path(pic), method: :put, class: "btn btn-primary btn-sm" do  %>
+                  <i class="fa fa-trophy"></i> Like (<%= pic.get_upvotes.size %>)</button>
+              <% end %>
+              <%= link_to "Comment", pic_path(pic), class: "btn btn-info btn-sm" %>
+              <%= link_to "View", pic, class: "btn btn-primary btn-sm mr-2" %>
 
-
-<%= link_to "New Post", new_pic_path %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

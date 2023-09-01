@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+
+/* styles.css */
+.center-container {
+    width: 80%; /* Set the desired width for your container */
+    margin: 0 auto; /* Auto margin horizontally centers the container */
+    padding: 20px; /* Add some padding if desired */
+    background-color: #ffffff; /* Set a background color */
+    box-shadow: 0 0 10px rgba(58, 56, 56, 0.1); /* Add a subtle shadow */
+  }
+
+  /* styles.css */
+.no-underline {
+    text-decoration: none; /* Remove the underline */
+    color: inherit; /* Preserve the default link color */
+    color: #ffffff;
+    /* You can add more styling if needed */
+  }
+
+  .btn-margin-left {
+    margin-left: 2px;
+}
+.btn-margin-right {
+    margin-right: 2px;
+}
+
+.navbar-logo {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Add margin to separate from other elements */
+}
+
+
+.signup-logo {
+  width: 80px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Add margin to separate from other elements */
+}
+
+
+/* Define a fade-out animation */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Apply the animation to the notice and alert messages */
+.notice, .alert {
+  animation: fadeOut 10s forwards; /* 2s duration */
+}
+

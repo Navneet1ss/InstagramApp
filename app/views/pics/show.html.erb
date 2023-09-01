@@ -1,18 +1,57 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card mt-5 shadow">
+        <div class="card-body">
+          <h2 class="card-title text-center"><%= @pic.title %></h2>
+          <% if @pic.image.attached? %>
+            <%= image_tag @pic.image, class: "img-fluid rounded" %>
+          <% end %>
+          <p class="card-text"><%= @pic.description %></p>
+          <p class="card-text text-muted">Posted By: <%= @pic.user.email %></p>
 
-<%= @pic.title %>
-<%= @pic.description %>
-<P> Post By: <%= @pic.user.email %> </p>
-
-<ul>
-  <li><%= link_to "Edit", edit_pic_path(@pic) %></li>
-
-  <li><%= link_to "Destroy", pic_path(@pic), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  } %></li>
-
-    <%= link_to "Back", root_path %>
-</ul>
-
-
-
+          <div class=" d-flex text-center mt-4 ">
+            <ul class="list-inline">
+               <li class="list-inline-item">
+                 <%= link_to like_pic_path(@pic), method: :put, class: "btn btn-primary btn-sm" do  %>
+                   <i class="fa fa-trophy"></i> Like (<%= @pic.get_upvotes.size %>)</button>
+                 <% end %>
+              </li>
+              <li class="list-inline-item">
+                <%= link_to "Edit", edit_pic_path(@pic), class: "btn btn-primary btn-sm" %>
+              </li>
+              <li class="list-inline-item">
+                <%= link_to "Destroy", pic_path(@pic), class: "btn btn-danger btn-sm",
+                      data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure?"
+                      } %>
+              </li>
+              <li class="list-inline-item">
+                <%= link_to "Back", root_path, class: "btn btn-secondary btn-sm" %>
+              </li>
+            </ul>
+          </div>
+              <%= render 'comments/form' %>
+              <div class="comments card mt-3">
+                <div class="card-body">
+                  <h5 class="card-title">Comments:</h5>
+                  <% @pic.comments.each do |comment| %>
+                   <div class="comment">
+                     <p>
+                      <% if comment.user %>
+                      <strong><%= comment.user.email %>:</strong>
+                      <% else %>
+                      <strong>Unknown User:</strong>
+                     <% end %>
+                     <%= comment.content %>
+                     </p>
+                   </div>
+                 <% end %>
+               </div>
+             </div>
+           </div>
+       </div>
+    </div>
+  </div>
+</div>

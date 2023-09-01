@@ -1,0 +1,13 @@
+<div class="comment-form card">
+  <div class="card-body">
+    <h5 class="card-title">Add a comment:</h5>
+    <%= form_for [@pic, @pic.comments.build], html: { class: "comment-form" } do |f| %>
+      <div class="form-group">
+        <%= f.text_area :content, placeholder: "Add a comment...", class: "form-control" %>
+      </div>
+      <div class="form-group mt-2">
+        <%= f.submit "Post Comment", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</div>

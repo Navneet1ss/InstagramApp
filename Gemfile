@@ -43,6 +43,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 gem 'devise', '~> 4.9', '>= 4.9.2'
+gem "image_processing", ">= 1.2"
+gem 'acts_as_votable', '~> 0.14.0'
+
 
 # Use Sass to process CSS
 # gem "sassc-rails"
